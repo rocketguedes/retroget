@@ -1,0 +1,30 @@
+{
+    "gb": {
+        "repo": "",
+        "extension": ""
+    },
+    "gba": {
+        "repo": "",
+        "extension": ""
+    },
+    "gbc": {
+        "repo": "",
+        "extension": ""
+    },
+    "n64": {
+        "repo": "",
+        "extension": ""
+    },
+    "nes": {
+        "repo": "",
+        "extension": ""
+    },
+    "snes": {
+        "repo": "",
+        "extension": ""
+    },
+    "megadrive": {
+        "repo": "",
+        "extension": ""
+    }
+}

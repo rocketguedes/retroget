@@ -1,0 +1,33 @@
+[project]
+name = "retroget"
+version = "1.0a1"
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+authors = [
+  { name = "Leandro Guedes" },
+]
+maintainers = [{ name = "Leandro Guedes" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/rocketguedes/retroget/issues"
+Repository = "https://github.com/rocketguedes/retroget.git"
+
+[project.scripts]
+retroget = "retroget.main_cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
