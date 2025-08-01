@@ -4,6 +4,7 @@ This module does stuff.
 """
 
 import json
+import sys
 from pathlib import Path
 
 SYSTEMINFO = Path("systeminfo.json")
@@ -12,7 +13,11 @@ SYSTEMINFO = Path("systeminfo.json")
 def systeminfo(json_file: Path = SYSTEMINFO) -> dict[str, dict[str, str]]:
     """A dummy docstring."""
 
-    return json.loads(json_file.read_text())
+    try:
+        return json.loads(json_file.read_text())
+    except FileNotFoundError as err:
+        print(err)
+        sys.exit(1)
 
 
 def choices(system: str) -> bool:
